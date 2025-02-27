@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/pink_bkg"
+    android:id="@+id/add_recipe_frag"
+    tools:context=".fragments.AddRecipeFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/teal_border">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Recipe"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/azure"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/baseline_add_photo_alternate_24"
+                android:id="@+id/uploadImage"
+                android:layout_marginTop="5dp"
+                android:scaleType="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/upload_recipe_name"
+                android:background="@drawable/teal_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:inputType="text"
+                android:hint="Enter recipe name"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/uploadIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/teal_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Ingredients"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadSteps"
+                android:background="@drawable/teal_border"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:hint="Enter Steps"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/upload_spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/teal_border"
+                android:entries="@array/category_list"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+
+            <Spinner
+                android:id="@+id/upload_spinner_Suitable_for"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/teal_border"
+                android:entries="@array/Suitable_for_list"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                />
+
+            <LinearLayout
+                android:id="@+id/time_picker_add_recipe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/teal_border"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/azure">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="prepration time:"/>
+
+                <NumberPicker
+                    android:id="@+id/hourPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" h "/>
+
+                <NumberPicker
+                    android:id="@+id/minutePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" m "/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/upload_spinner_Difficulty_level"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/teal_border"
+                android:entries="@array/Difficulty_Level_list"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Save"
+                android:id="@+id/saveButton"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/azure"
+                app:cornerRadius = "20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RecipeBox</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="category_list">
+        <item>Select Category</item>
+        <item>Dairy</item>
+        <item>Meat</item>
+        <item>Asian</item>
+        <item>Desserts</item>
+    </string-array>
+    <string-array name="Suitable_for_list">
+        <item>Select Suitable For</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+    <string-array name="Difficulty_Level_list">
+        <item>Select Difficulty Level</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+</resources>

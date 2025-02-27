@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RecipeBox" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orchid_pink</item>
+        <item name="colorPrimaryVariant">@color/orchid_pink</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/mountbatten_pink</item>
+        <item name="colorSecondaryVariant">@color/azure</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.RecipeBox" parent="Base.Theme.RecipeBox" />
+</resources>
